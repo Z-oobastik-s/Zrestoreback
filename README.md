@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![ZRestoreBack Logo](https://i.imgur.com/oIEs2FK.png)
+![ZRestoreBack Logo](https://i.ibb.co/00HXTXg/zrestoreback.jpg)
 
 **A comprehensive death management plugin for Minecraft servers**
 
@@ -272,4 +272,4 @@ While the plugin is tested on Minecraft 1.21.4, it may work on other versions as
 
 ## License
 
-ZRestoreBack © 2023 by Zoobastiks. All rights reserved. 
+ZRestoreBack © 2025 by Zoobastiks. All rights reserved. 
