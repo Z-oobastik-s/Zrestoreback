@@ -1,0 +1,42 @@
+name: ZRestoreBack
+version: '1.0'
+main: org.zoobastiks.zrestoreback.ZRestoreBack
+api-version: 1.21
+authors: [Zoobastik]
+description: Плагин для возвращения игрока на место смерти и восстановления вещей
+website: https://t.me/Zoobastiks
+depend: [Vault]
+commands:
+  deathpoints:
+    description: Управление точками смерти
+    usage: |-
+      §cИспользование:
+      §a/dp §7- Показать список точек смерти
+      §a/dp list §7- Показать список точек смерти
+      §a/dp tp <номер> §7- Телепортироваться на место смерти
+      §a/dp items <номер> §7- Восстановить предметы
+      §a/dp <номер> §7- Телепорт на место смерти по номеру
+      §a/dp help §7- Показать справку по командам
+      §a/dp reload §7- Перезагрузить конфигурацию
+    aliases: [dp, deaths]
+permissions:
+  zrestoreback.use:
+    description: Разрешает использовать команды плагина
+    default: true
+  zrestoreback.admin:
+    description: Даёт доступ ко всем функциям плагина
+    default: op
+    children:
+      zrestoreback.use: true
+      zrestoreback.reload: true
+      zrestoreback.save: true
+      zrestoreback.check: true
+  zrestoreback.reload:
+    description: Разрешает перезагружать конфигурацию плагина
+    default: op
+  zrestoreback.save:
+    description: Разрешает вручную сохранять данные о точках смерти
+    default: op
+  zrestoreback.check:
+    description: Разрешает просматривать точки смерти других игроков
+    default: op 
