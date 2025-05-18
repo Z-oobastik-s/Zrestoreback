@@ -1,0 +1,4 @@
+build/
+.gradle/
+upload_to_github.bat
+.git-credentials
